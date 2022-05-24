@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from Lineage
+# that inherit from aniosp
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,14 +10,14 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/exynos/private
+    device/aniosp/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/exynos/dynamic \
-    device/lineage/sepolicy/exynos/system
+    device/aniosp/sepolicy/exynos/dynamic \
+    device/aniosp/sepolicy/exynos/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/exynos/dynamic \
-    device/lineage/sepolicy/exynos/vendor
+    device/aniosp/sepolicy/exynos/dynamic \
+    device/aniosp/sepolicy/exynos/vendor
 endif
